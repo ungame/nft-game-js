@@ -91,3 +91,9 @@ truffle migrate --reset --dry-run
 - Selecionar o arquivo truffle-config.js
 - Salvar e Reiniciar
 
+
+### Bibliotecas Usadas Memory Game Client
+
+```cmd
+npm install redux react-redux reduxsauce seamless-immutable bootstrap react-bootstrap
+```
