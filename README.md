@@ -97,3 +97,16 @@ truffle migrate --reset --dry-run
 ```cmd
 npm install redux react-redux reduxsauce seamless-immutable bootstrap react-bootstrap
 ```
+
+### Configurar Web3
+
+- Criar um diretório `blockchain` dentro do `memory-game-client/src`
+- Copiar o diretório `contracts` dentro de `memory-game/build` para o diretório `blockchain`
+- Criar um arquivo `index.js` dentro do diretório `blockchain`
+- Criar um provider que irá fazer a conexão com a metamask e fazer a chamadas para a blockchain
+- [Instalar web3](https://web3js.readthedocs.io/en/v1.2.1/getting-started.html)
+
+```cmd
+npm install web3
+```
+

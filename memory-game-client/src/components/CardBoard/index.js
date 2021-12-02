@@ -30,13 +30,6 @@ const GameBoard = (props) => {
         }
     };
 
-    useEffect(() => {
-        let alreadyChosen = cardsChosen.length;
-        if (alreadyChosen === 2) {
-            checkForMatch();
-        }
-    }, [cardsChosen]);
-
     const checkForMatch = () => {
         const [ firstCardId, secondCardId ] = cardsChosenId;
 
@@ -57,10 +50,18 @@ const GameBoard = (props) => {
         clearChosenCards();
     };
 
+    useEffect(() => {
+        let alreadyChosen = cardsChosen.length;
+        if (alreadyChosen === 2) {
+            checkForMatch();
+        }
+    }, [cardsChosen]);
+
     return cardList.map((card, key) => {
         return (
             <img 
                 key={key}
+                alt=""
                 src={chooseImage(key)}
                 data-id={key}
                 onClick={(event) => {
